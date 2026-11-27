@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zainab Khan · AI Solutions Engineer</title>
+  <meta name="description" content="Zainab Khan is an AI Solutions Engineer working across AI agent evaluation, machine learning, data science and back-end engineering.">
+  <meta property="og:title" content="Zainab Khan · AI Solutions Engineer">
+  <meta property="og:description" content="Intelligent systems, carefully evaluated. AI solutions, agent evaluation, machine learning and data science.">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236E2B3A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23F5EFE4' text-anchor='middle'%3EZK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Zainab Khan, back to top">
+      <span class="brand__name">Zainab Khan</span>
+      <span class="brand__role">AI Solutions Engineer</span>
+    </a>
+
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="nav-links" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#focus">Focus</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--small btn--solid js-resume" href="assets/Zainab-Khan-Resume.pdf" download>Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ OPENING ============ -->
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">AI Solutions Engineer · Data Science · United Arab Emirates</p>
+    <h1 class="hero__title">Intelligent systems,<br><em>carefully evaluated.</em></h1>
+    <p class="hero__lede">
+      Work at the intersection of artificial intelligence, data science and back-end engineering: designing
+      AI-driven solutions, evaluating the agents behind them, and turning data into decisions. Shaped by
+      remote collaboration across the United States and India, with a steady emphasis on rigour, clarity
+      and results that hold up under scrutiny.
+    </p>
+    <ul class="tags tags--hero" aria-label="Areas">
+      <li>AI Solutions</li><li>LLM &amp; Agent Evaluation</li><li>Reinforcement Learning</li><li>Machine Learning</li><li>Data Science</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn--solid" href="#work">View Work <span aria-hidden="true">→</span></a>
+      <a class="btn js-resume" href="assets/Zainab-Khan-Resume.pdf" download>Résumé</a>
+      <a class="btn" href="https://github.com/zainabkhan242" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/zainabkhan490549253/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Work</h2>
+      <p class="section__intro">A considered selection of projects, led by work in AI evaluation and supported by data-driven, full-stack applications. Each has been taken from first idea to working product, and all remain open to explore on GitHub.</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="ai" aria-pressed="false">AI &amp; Machine Learning</button>
+      <button class="filter" data-filter="fullstack" aria-pressed="false">Full-Stack</button>
+      <button class="filter" data-filter="academic" aria-pressed="false">Academic</button>
+    </div>
+
+    <div class="projects">
+
+      <!-- RepoSetup-Bench -->
+      <article class="project project--featured" data-category="ai">
+        <div class="project__meta">
+          <p class="label">AI &amp; Machine Learning · Hackathon Project</p>
+          <h3>RepoSetup-Bench</h3>
+          <p class="project__summary">A reinforcement-learning benchmark for assessing how well AI coding agents prepare a repository for publication.</p>
+          <ul class="tags"><li>Python</li><li>Gymnasium</li><li>Reinforcement Learning</li><li>LLM Evaluation</li><li>pytest</li></ul>
+          <a class="link" href="https://github.com/zainabkhan242/RepoSetupBench-RL-Gym-Platform-" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+        <div class="project__body">
+          <h4>Context</h4>
+          <p>AI assistants often configure projects with confidence but without accuracy, leaving generated files committed and documentation that describes the wrong stack. RepoSetup-Bench was built to measure the outcome rather than the impression.</p>
+          <h4>Approach</h4>
+          <p>A Gymnasium environment presents an agent with a repository containing common setup issues. The agent is expected to configure <code>.gitignore</code> correctly, untrack generated and sensitive files without deleting them, remove nested <code>.git</code> folders, and write a README grounded in the actual code.</p>
+          <p>A reward function scores eight weighted checks, while safeguards against reward hacking assign a score of zero to agents that delete files or ignore the repository wholesale.</p>
+          <h4>Outcomes</h4>
+          <ul class="bullets">
+            <li>Three task repositories: Django with React, Express with React, and Flask</li>
+            <li>Six scripted agents, including two designed to cheat, both scoring 0.00</li>
+            <li>A well-written but inaccurate README scores 0.04 on average, as the verifier checks content against the code</li>
+            <li>Seventeen automated tests, an HTML report of each agent's trajectory, and support for live LLM agents</li>
+          </ul>
+          <p class="note">A hackathon prototype. Results reflect scripted agents. Live-model evaluation is supported.</p>
+        </div>
+      </article>
+
+      <!-- Recruiter Portal -->
+      <article class="project" data-category="fullstack">
+        <div class="project__meta">
+          <p class="label">Full-Stack · Internship Project, Gorai Technology Solutions</p>
+          <h3>Recruiter Portal</h3>
+          <p class="project__summary">A data-driven application for managing candidates and matching them to open roles.</p>
+          <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Mongoose</li><li>Multer</li></ul>
+          <a class="link" href="https://github.com/zainabkhan242/Recruiter-Portal-Internship-Project" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+        <div class="project__body">
+          <h4>Context</h4>
+          <p>Candidate details and resumes were held in separate places, which slowed down shortlisting.</p>
+          <h4>Approach</h4>
+          <p>A React interface backed by a Node.js and Express API and a MongoDB database. Recruiters add candidates, upload resumes and select a skill and job title, and the system returns the five closest matches.</p>
+          <h4>Outcomes</h4>
+          <ul class="bullets">
+            <li>Candidate matching by skill and job title, using case-insensitive queries</li>
+            <li>Skill and role reference data seeded into and served from MongoDB</li>
+            <li>Server-side resume uploads with Multer</li>
+            <li>Candidate cards that show each profile at a glance</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Qissah -->
+      <article class="project" data-category="fullstack">
+        <div class="project__meta">
+          <p class="label">Full-Stack · Personal Project</p>
+          <h3>Qissah</h3>
+          <p class="project__summary">A web application for a South Asian restaurant, with online menus, reservations and payments.</p>
+          <ul class="tags"><li>Python</li><li>Django</li><li>Django REST Framework</li><li>React</li><li>Stripe</li><li>SQLite</li></ul>
+          <a class="link" href="https://github.com/zainabkhan242/Qissah-SouthAsian-Restaurant-Website" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+        <div class="project__body">
+          <h4>Approach</h4>
+          <p>A Django REST API serves the menu and reservations to a React frontend. Payments go through Stripe Checkout, and staff manage the menu and bookings from the Django admin panel.</p>
+          <h4>Outcomes</h4>
+          <ul class="bullets">
+            <li>REST endpoints for menu items and table reservations</li>
+            <li>Stripe integration, with credentials kept in environment variables</li>
+            <li>A responsive layout for mobile and desktop</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Art Gallery -->
+      <article class="project" data-category="academic">
+        <div class="project__meta">
+          <p class="label">Academic · Database Systems</p>
+          <h3>Art Gallery Management System</h3>
+          <p class="project__summary">A relational database system for managing galleries, exhibitions, artists and their work.</p>
+          <ul class="tags"><li>Java</li><li>JSP</li><li>Servlets</li><li>JDBC</li><li>MySQL</li></ul>
+          <a class="link" href="https://github.com/zainabkhan242/Art-Gallery-DBMS-Project" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+        <div class="project__body">
+          <h4>Approach</h4>
+          <p>A Java web application built with Servlets, JSP and JDBC on MySQL. Administrators manage galleries and exhibitions, artists publish their paintings, and customers browse the collection and contact artists directly.</p>
+          <h4>Outcomes</h4>
+          <ul class="bullets">
+            <li>A normalised relational schema covering galleries, exhibitions, artists, paintings and customers</li>
+            <li>Three user roles, each with its own access</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOCUS ============ -->
+<section class="section section--band" id="focus">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Areas of Focus</p>
+      <h2>Focus</h2>
+      <p class="section__intro">The areas most often explored in her work, and those that have proven most intriguing along the way. Together, they trace a clear direction: building AI systems that are useful, measurable and grounded in sound data.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <p class="card__num">01</p>
+        <h3>AI Solutions Engineering</h3>
+        <p>Designing and integrating AI capabilities into real products, from back-end services and APIs to the workflows around them.</p>
+      </article>
+      <article class="card">
+        <p class="card__num">02</p>
+        <h3>LLM and AI Agent Evaluation</h3>
+        <p>Building benchmarks, verifiers and test harnesses that measure what AI agents actually achieve, including safeguards against reward hacking.</p>
+      </article>
+      <article class="card">
+        <p class="card__num">03</p>
+        <h3>Reinforcement Learning</h3>
+        <p>Designing environments, action spaces and reward functions that shape agent behaviour in clear, measurable ways.</p>
+      </article>
+      <article class="card">
+        <p class="card__num">04</p>
+        <h3>Machine Learning</h3>
+        <p>Applying supervised and unsupervised methods, such as clustering, and evaluating models with care rather than relying on headline accuracy.</p>
+      </article>
+      <article class="card">
+        <p class="card__num">05</p>
+        <h3>Data Analysis and Visualisation</h3>
+        <p>Cleaning, exploring and visualising data so that patterns become clear enough to act on.</p>
+      </article>
+      <article class="card">
+        <p class="card__num">06</p>
+        <h3>Cloud for AI and Data</h3>
+        <p>Architecting scalable, secure cloud environments on AWS for data and AI workloads.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Professional Experience</p>
+      <h2>Experience</h2>
+      <p class="section__intro">A path that began in data science and analysis, moved through web development, and now centres on back-end engineering for AI products. Each role has been shaped by close collaboration with teams across the United States and India.</p>
+    </header>
+
+    <ol class="timeline">
+      <li class="role">
+        <p class="role__when">Nov 2025 – Jan 2026 <span>Remote · Atlanta, Georgia</span></p>
+        <h3>Back-End Developer</h3>
+        <p class="role__org">HighScores AI · Full-time</p>
+        <ul class="bullets">
+          <li>Developed and maintained back-end services and REST APIs for an AI-driven platform.</li>
+          <li>Designed data models and queries, and integrated third-party and AI services.</li>
+          <li>Contributed to code reviews, testing and debugging within a distributed team.</li>
+        </ul>
+      </li>
+      <li class="role">
+        <p class="role__when">Jan 2025 – Sep 2025 <span>Remote</span></p>
+        <h3>Web Developer</h3>
+        <p class="role__org">Twine · Part-time</p>
+        <ul class="bullets">
+          <li>Designed and developed responsive websites for clients, from layout to launch.</li>
+          <li>Contributed to three client projects, translating briefs into finished pages and features.</li>
+          <li>Worked closely with clients on requirements, progress and revisions.</li>
+        </ul>
+      </li>
+      <li class="role">
+        <p class="role__when">Feb 2025 – May 2025 <span>Hybrid · Bengaluru</span></p>
+        <h3>Data Analyst Intern</h3>
+        <p class="role__org">Gorai Technology Solutions</p>
+        <ul class="bullets">
+          <li>Organised and analysed candidate and recruitment data to support faster, better-informed shortlisting.</li>
+          <li>Built the Recruiter Portal, which matches candidates to roles by skill and job title.</li>
+        </ul>
+      </li>
+      <li class="role">
+        <p class="role__when">Oct 2023 – Nov 2023 <span>Remote · Bengaluru</span></p>
+        <h3>Data Science Intern</h3>
+        <p class="role__org">Be Practical Tech Solutions</p>
+        <ul class="bullets">
+          <li>Explored, cleaned and prepared datasets to surface meaningful patterns.</li>
+          <li>Created visualisations in Python that presented complex data clearly to the team.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--band" id="skills">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Skills and Tools</p>
+      <h2>Skills</h2>
+      <p class="section__intro">The languages, methods and tools relied upon most in day-to-day work. Each has been put into practice through real projects and professional roles, and they are grouped here by discipline.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <article class="card">
+        <p class="card__num">Category 01</p>
+        <h3>AI &amp; Machine Learning</h3>
+        <ul class="skill-list"><li>LLM &amp; Agent Evaluation</li><li>Reinforcement Learning</li><li>Gymnasium</li><li>Reward Design</li><li>Clustering (K-Means)</li><li>Model Evaluation</li></ul>
+      </article>
+      <article class="card">
+        <p class="card__num">Category 02</p>
+        <h3>Data Science</h3>
+        <ul class="skill-list"><li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Exploratory Data Analysis</li><li>Data Visualisation</li></ul>
+      </article>
+      <article class="card">
+        <p class="card__num">Category 03</p>
+        <h3>Engineering</h3>
+        <ul class="skill-list"><li>REST APIs</li><li>Node.js</li><li>Express</li><li>Django</li><li>MongoDB</li><li>MySQL</li><li>React</li><li>JavaScript</li><li>Java</li></ul>
+      </article>
+      <article class="card">
+        <p class="card__num">Category 04</p>
+        <h3>Cloud &amp; Tooling</h3>
+        <ul class="skill-list"><li>AWS</li><li>Git &amp; GitHub</li><li>pytest</li><li>Jupyter Notebook</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Education and Certifications</p>
+      <h2>Education</h2>
+      <p class="section__intro">A grounding in computer science, extended through continued study in cloud computing, artificial intelligence and data science. Learning has remained a quiet constant alongside professional work.</p>
+    </header>
+
+    <article class="degree">
+      <p class="role__when">2021 – 2025</p>
+      <h3>Bachelor of Engineering, Computer Science</h3>
+      <p class="role__org">AMC Engineering College · Visvesvaraya Technological University · Bengaluru</p>
+      <p class="degree__gpa">GPA 3.7</p>
+    </article>
+
+    <h3 class="subhead">Certifications</h3>
+    <ul class="certs">
+      <li><span class="certs__name">AWS Cloud Solutions Architect</span><span class="certs__org">Amazon Web Services</span><span class="certs__year">2026</span></li>
+      <li><span class="certs__name">Data Science: K-Means Clustering</span><span class="certs__org">University of London</span><span class="certs__year">2024</span></li>
+      <li><span class="certs__name">AI and Machine Learning</span><span class="certs__org">Google for Developers</span><span class="certs__year">2024</span></li>
+      <li><span class="certs__name">AWS Cloud Foundations</span><span class="certs__org">Amazon Web Services</span><span class="certs__year">2024</span></li>
+      <li><span class="certs__name">Programming Fundamentals</span><span class="certs__org">Duke University</span><span class="certs__year">2022</span></li>
+      <li><span class="certs__name">Design Thinking and Innovation</span><span class="certs__org">University of Virginia, Darden School of Business</span><span class="certs__year">2022</span></li>
+    </ul>
+    <a class="link" href="https://www.linkedin.com/in/zainabkhan490549253/details/certifications/" target="_blank" rel="noopener">View all credentials on LinkedIn ↗</a>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section--band" id="about">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">About</p>
+      <h2>About</h2>
+      <p class="section__intro">A closer look at the person behind the work and the values that guide it. Patience with detail, and a genuine curiosity about where AI and data are heading.</p>
+    </header>
+
+    <div class="about">
+      <!-- PHOTO: replace images/profile.jpg with your own photo (portrait, about 4:5). -->
+      <figure class="about__photo">
+        <img src="images/profile.jpg" alt="Portrait of Zainab Khan" loading="lazy"
+             onerror="this.parentElement.classList.add('is-empty'); this.remove();">
+        <span class="about__monogram" aria-hidden="true">ZK</span>
+      </figure>
+
+      <div class="about__text">
+        <p class="about__lead">The quieter parts of engineering are where she finds the most value: a well-structured system, thorough testing, and results that reflect what really happened, not what was hoped for.</p>
+        <p>Raised in Abu Dhabi and educated in Bengaluru, she is now based in the UAE. Her path began in data science and analysis, moved through web and back-end development, and now centres on artificial intelligence: building AI solutions that are useful, measurable and verifiably sound.</p>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>United Arab Emirates</dd></div>
+          <div><dt>Focus</dt><dd>AI solutions · Agent evaluation · Machine learning · Data science</dd></div>
+          <div><dt>Open to</dt><dd>Full-time roles, in the UAE or remote</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <header class="section__head">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in Touch</h2>
+      <p class="section__intro">Conversations about opportunities in AI solutions engineering, machine learning and data science are always welcome. Email remains the most direct way to connect, and every message receives a prompt reply.</p>
+    </header>
+
+    <div class="contact">
+      <dl class="contact__list">
+        <div><dt>Email</dt><dd><a href="mailto:zainabathar14@gmail.com">zainabathar14@gmail.com</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/zainabkhan490549253/" target="_blank" rel="noopener">linkedin.com/in/zainabkhan490549253</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/zainabkhan242" target="_blank" rel="noopener">github.com/zainabkhan242</a></dd></div>
+        <div><dt>Location</dt><dd>United Arab Emirates</dd></div>
+      </dl>
+
+      <aside class="resume js-resume-card">
+        <p class="eyebrow eyebrow--light">Résumé</p>
+        <h3>Zainab Khan</h3>
+        <p>A concise overview of education, experience, projects and certifications, presented on a single page.</p>
+        <a class="btn btn--light js-resume" href="assets/Zainab-Khan-Resume.pdf" download>Download PDF <span aria-hidden="true">↓</span></a>
+      </aside>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn--solid" href="mailto:zainabathar14@gmail.com">Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/zainabkhan490549253/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/zainabkhan242" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 Zainab Khan</p>
+    <a href="#top" class="link">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
