@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio website of Zainab Khan, AI Solutions Engineer.
+Personal portfolio website of Zainab Khan, AI Engineer (AI & Data Science).
 
 Live site: see the repository description.
 

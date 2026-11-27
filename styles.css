@@ -377,6 +377,6 @@ p { margin: 0 0 1rem; }
 @media (max-width: 640px) { .grid--4 { grid-template-columns: 1fr; } }
 
 /* Footer: soft taupe */
-.footer { background: #D3C1B0; color: #4A3830; }
-.footer .link { color: #4A3830; }
-.footer .link:hover { border-bottom-color: #4A3830; }
+.footer { background: #C6B19E; color: #3F2F28; }
+.footer .link { color: #3F2F28; }
+.footer .link:hover { border-bottom-color: #3F2F28; }
