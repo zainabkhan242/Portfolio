@@ -301,3 +301,62 @@ p { margin: 0 0 1rem; }
   .resume { padding: 28px 24px; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* =========================================================
+   Accent colours from the palette
+   Ocean (blue) · Sage (green) · Cocoa (brown) · Plum
+   ========================================================= */
+:root { --cocoa: #664E44; --ocean-tint: rgba(62,110,120,.08); --sage-tint: rgba(94,106,72,.08); --cocoa-tint: rgba(102,78,68,.08); --plum-tint: rgba(110,43,58,.07); }
+
+.a-plum  { --accent: var(--plum);  --accent-tint: var(--plum-tint); }
+.a-ocean { --accent: var(--ocean); --accent-tint: var(--ocean-tint); }
+.a-sage  { --accent: var(--sage);  --accent-tint: var(--sage-tint); }
+.a-cocoa { --accent: var(--cocoa); --accent-tint: var(--cocoa-tint); }
+
+/* Hero tags */
+.tags li.t-plum  { color: var(--plum);  border-color: rgba(110,43,58,.3);  background: var(--plum-tint); }
+.tags li.t-ocean { color: var(--ocean); border-color: rgba(62,110,120,.35); background: var(--ocean-tint); }
+.tags li.t-sage  { color: var(--sage);  border-color: rgba(94,106,72,.35);  background: var(--sage-tint); }
+.tags li.t-cocoa { color: var(--cocoa); border-color: rgba(102,78,68,.35);  background: var(--cocoa-tint); }
+
+/* Projects: category colour on label, top rule, tags and bullets */
+.project[class*="a-"] { border-top: 3px solid var(--accent); }
+.project[class*="a-"] .label { color: var(--accent); }
+.project[class*="a-"] .tags li { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); background: var(--accent-tint); }
+.project[class*="a-"] .bullets li::before { background: var(--accent); }
+.project[class*="a-"] h4 { color: var(--accent); }
+
+/* Filter buttons pick up their category colour */
+.filter[data-filter="ai"].is-active { background: var(--ocean); border-color: var(--ocean); }
+.filter[data-filter="fullstack"].is-active { background: var(--cocoa); border-color: var(--cocoa); }
+.filter[data-filter="academic"].is-active { background: var(--sage); border-color: var(--sage); }
+
+/* Focus and Skills cards */
+.card[class*="a-"] { border-top: 3px solid var(--accent); }
+.card[class*="a-"] .card__num { color: var(--accent); }
+.card[class*="a-"]:hover { border-color: var(--accent); }
+.card[class*="a-"] .skill-list li::after { color: var(--accent); }
+
+/* Timeline dots and dates */
+.role[class*="a-"]::before { border-color: var(--accent); background: var(--accent-tint); }
+.role[class*="a-"] .role__when { color: var(--accent); }
+
+/* Degree */
+.degree.a-sage { border-left-color: var(--sage); }
+.degree.a-sage .role__when { color: var(--sage); }
+
+/* Certifications: alternate year colours */
+.certs li:nth-child(4n+1) .certs__year { color: var(--ocean); }
+.certs li:nth-child(4n+2) .certs__year { color: var(--sage); }
+.certs li:nth-child(4n+3) .certs__year { color: var(--cocoa); }
+.certs li:nth-child(4n+4) .certs__year { color: var(--plum); }
+
+/* Contact labels in ocean, links underline in sage */
+.contact__list dt { color: var(--ocean); }
+.facts dt { color: var(--cocoa); }
+
+/* Footer in cocoa brown */
+.footer { background: var(--cocoa); color: rgba(245,239,228,.85); border-top: 0; }
+.footer .link { color: var(--ivory); }
+.footer .link:hover { border-bottom-color: var(--ivory); }
+.role[class*="a-"] .bullets li::before { background: var(--accent); }
