@@ -45,7 +45,7 @@
   }));
 
   // Gentle fade-in as sections scroll into view
-  const revealTargets = document.querySelectorAll('.section__head, .project, .card, .role, .degree, .certs, .about, .contact');
+  const revealTargets = document.querySelectorAll('.section__head, .project, .card, .role, .degree, .certs, .about, .hobby, .contact');
   if ('IntersectionObserver' in window) {
     revealTargets.forEach((el) => el.classList.add('reveal'));
     const io = new IntersectionObserver((entries) => {

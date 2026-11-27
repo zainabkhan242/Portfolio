@@ -360,3 +360,23 @@ p { margin: 0 0 1rem; }
 .footer .link { color: var(--ivory); }
 .footer .link:hover { border-bottom-color: var(--ivory); }
 .role[class*="a-"] .bullets li::before { background: var(--accent); }
+
+/* ---------- Beyond Work ---------- */
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hobby { margin: 0; background: #FBF8F2; border: 1px solid var(--sand-line); border-top: 3px solid var(--accent); border-radius: var(--radius); overflow: hidden; transition: transform .25s, box-shadow .25s; }
+.hobby:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -22px rgba(43,30,33,.35); }
+.hobby__img { position: relative; aspect-ratio: 4 / 3; background: var(--accent-tint); overflow: hidden; }
+.hobby__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.hobby:hover .hobby__img img { transform: scale(1.04); }
+.hobby__img.is-empty { background: linear-gradient(150deg, var(--accent-tint), color-mix(in srgb, var(--accent) 22%, var(--ivory))); }
+.hobby__kind { position: absolute; left: 12px; bottom: 12px; font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: rgba(251,248,242,.92); padding: .3rem .6rem; border-radius: 2px; }
+.hobby figcaption { padding: 22px 22px 24px; }
+.hobby h3 { font-size: 1.4rem; margin-bottom: .5rem; }
+.hobby p { margin: 0; font-size: .92rem; color: var(--ink-soft); }
+@media (max-width: 980px) { .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .grid--4 { grid-template-columns: 1fr; } }
+
+/* Footer: soft taupe */
+.footer { background: #D3C1B0; color: #4A3830; }
+.footer .link { color: #4A3830; }
+.footer .link:hover { border-bottom-color: #4A3830; }
